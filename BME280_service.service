@@ -1,0 +1,11 @@
+[Unit]
+Description=Start BME280 Sensor Script after network is online
+After=network-online.target
+
+[Service]
+ExecStart=/bin/bash -c 'source /path/to/myenv/bin/activate && /usr/bin/python3 /path/to/your/script.py'
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
