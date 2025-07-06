@@ -38,7 +38,7 @@ def check_internet_connection():
 # Function to send a simple message to a Discord webhook
 # Takes a string 'message' as input and sends it to the specified Discord webhook URL
 def send_discord_message(message):
-    webhook_url = "https://discordapp.com/api/webhooks/1277709649688264744/0BYwgpYL6agvT82oSt5uVv6JiRABXv5WURbGxbvRHoaPqqJjr5WWi43Nn9q2d-VW71BX"
+    webhook_url = "https://discordapp.com/api/webhooks/-deleted because of privacy reasons-"
     data = {"content": message}
     try:
         # Send a POST request to the Discord webhook with the message
@@ -54,7 +54,7 @@ def send_discord_message(message):
 # Function to send a file to a Discord webhook
 # Takes the file path and a message as input, and sends the file along with the message to the specified Discord webhook URL
 def send_discord_file(file_path, message):
-    webhook_url = "https://discordapp.com/api/webhooks/1277709649688264744/0BYwgpYL6agvT82oSt5uVv6JiRABXv5WURbGxbvRHoaPqqJjr5WWi43Nn9q2d-VW71BX"
+    webhook_url = "https://discordapp.com/api/webhooks/-deleted because of privacy reasons-"
     with open(file_path, 'rb') as file:
         data = {"content": message}
         files = {'file': file}
